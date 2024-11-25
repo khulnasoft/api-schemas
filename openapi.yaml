@@ -1,20 +1,20 @@
 openapi: 3.1.0
 info:
   version: 1.0.0
-  title: Example API
-  termsOfService: https://example.com/terms/
+  title: Khulnasoft API
+  termsOfService: https://khulnasoft.com/terms/
   contact:
     name: Contact our support
-    email: contact@example.com
-    url: http://example.com/contact
+    email: contact@khulnasoft.com
+    url: http://khulnasoft.com/contact
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   x-logo:
     url: 'https://redocly.github.io/openapi-template/logo.png'
-    altText: OpenAPI example logo
+    altText: OpenAPI khulnasoft logo
   description: >
-    This is an **example** API to demonstrate features of the OpenAPI
+    This is an **khulnasoft** API to demonstrate features of the OpenAPI
     specification.
 
     # Introduction
@@ -45,13 +45,13 @@ externalDocs:
   url: 'https://github.com/Redocly/create-openapi-repo'
 tags:
   - name: Echo
-    description: "Example echo operations."
+    description: "Khulnasoft echo operations."
   - name: User
-    description: "Example actions on user accounts."
+    description: "Khulnasoft actions on user accounts."
   - name: Admin
-    description: "Example operations reserved for administrators."
+    description: "Khulnasoft operations reserved for administrators."
   - name: Info
-    description: "Example operations for retrieving information."
+    description: "Khulnasoft operations for retrieving information."
   - name: Tag
     description: "This is a tag description."
 x-tagGroups:
@@ -69,7 +69,7 @@ servers:
       tenant:
         default: www
         description: Your tenant id
-  - url: https://example.com/api/v1
+  - url: https://khulnasoft.com/api/v1
 paths:
   '/users/{username}':
     $ref: 'paths/users_{username}.yaml'
@@ -79,23 +79,23 @@ paths:
     $ref: 'paths/user-status.yaml'
   /pathItem:
     $ref: paths/pathItem.yaml
-  /pathItemWithExamples:
-    $ref: paths/pathItemWithExamples.yaml
+  /pathItemWithKhulnasoft:
+    $ref: paths/pathItemWithKhulnasoft.yaml
   '/echo':
     $ref: 'paths/echo.yaml'
 components:
   securitySchemes:
     main_auth:
-      description: "Example description text of the OAuth2 scheme."
+      description: "Khulnasoft description text of the OAuth2 scheme."
       type: oauth2
       flows:
         implicit:
-          authorizationUrl: http://example.com/api/oauth/dialog
+          authorizationUrl: http://khulnasoft.com/api/oauth/dialog
           scopes:
             'read:users': read user info
             'write:users': modify or remove users
     api_key:
-      description: "Example description text of the API key scheme."
+      description: "Khulnasoft description text of the API key scheme."
       type: apiKey
       in: header
       name: api_key
