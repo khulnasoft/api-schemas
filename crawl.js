@@ -61,7 +61,7 @@ const puppeteer = require('puppeteer');
   await page.goto(url);
 
   console.log("Waiting for page to render...")
-  await page.waitForSelector('text/Khulnasoft API')
+  await page.waitForSelector('text/Khulnasoft API Schema')
 
   // Wait for text from an expanded sidebar item
   await page.waitForSelector('text/List Accounts')
